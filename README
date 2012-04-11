@@ -1,0 +1,38 @@
+ABOUT :
+WMFS Window Manager.
+   * Window Manager From Scratch
+
+A highly configurable and manageable tiling Window Manager created from scratch
+
+AUTHORS : (in order of commits and > 5 commits)
+ - Martin Duquesnoy <xorg62@gmail.com>
+ - Philippe Pepiot <phil@philpep.org>
+ - Marc Lagrange <markocpc@gmail.com>
+ - OldMan <tele-post@mail.ru>
+ - Raphael Khaiat <raphael@khaiat.org>
+ - Tomáš Chvátal <scarabeus@gentoo.org>
+ - David Delassus <linkdd@ydb.me>
+
+
+LICENSE : BSD
+
+REQUIREMENT :
+  - freetype2
+  - libxft
+  - libx11
+  - libxinerama (optional)
+  - libxrandr   (optional)
+  - imlib2      (optional)
+
+OS :
+  - GNU/Linux : Supported.
+  - FreeBSD/OpenBSD/NetBSD : Supported.
+
+INSTALL :
+./configure [--without-imlib2|--without-xrandr|--without-xinerama] (./configure -h)
+make
+sudo make install
+
+DISTROS :
+  - wmfs port for FreeBSD at x11-wm/wmfs
+  - wmfs is available with AUR in ArchLinux (wmfs or wmfs-git)

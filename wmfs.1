@@ -1,0 +1,203 @@
+.\"     Title: wmfs
+.\"    Author:
+.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
+.\"      Date: 04/22/2009
+.\"    Manual: manual of wmfs
+.\"    Source: wmfs 0.1rc4 (On The Run)
+.\"
+.TH "WMFS" "1" "04/22/2009" "wmfs 0\&.1rc4 (On The Run)" "manual of wmfs"
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+wmfs \- Window Manager From Scratch
+.SH "SYNOPSIS"
+\fBwmfs\fR [\fB\-ihvS\fR] [\fB\-C <file>\fR] [\fB\-c <uicb_function> <cmd>\fR] [\fB\-g <argument>\fR] [\fB\-s <screen_num> <string>\fR]  [\fB\-V <viwmfs cmd>\fR]
+.sp
+.SH "DESCRIPTION"
+\fBWMFS\fR is a basic, lightweight and dynamic tiling windows manager for X\&.
+.sp
+.SH "OPTIONS"
+.PP
+\fB\-C <file>\fR
+.RS 4
+Load a configuration file\&.
+.RE
+.PP
+\fB\-c <uicb_function> <cmd>\fR
+.RS 4
+Execute an uicb function to control WMFS\&.
+.RE
+.PP
+\fB\-g <argument>\fR
+.RS 4
+Show information about wmfs status\&.
+.RE
+.PP
+\fB\-s <screen_num> <string>\fR
+.RS 4
+Set the bar(s) statustext. If the screen number is not specified, the string will be show on all screens bars\&.
+.RE
+.PP
+\fB\-V <viwmfs cmd>\fR
+.RS 4
+Manage WMFS with vi-like command\&.
+.RE
+.PP
+\fB\-S\fR
+.RS 4
+Update status script\&.
+.RE
+.PP
+\fB\-v\fR
+.RS 4
+Print version information to standard output, then exit\&.
+.RE
+.PP
+\fB\-h\fR
+.RS 4
+Print help information, then exit\&.
+.RE
+.PP
+\fB\-i\fR
+.RS 4
+Print WMFS information
+.RE
+.SH "DEFAULT KEY BINDINGS"
+.PP
+\fBControl\-Alt + r\fR
+.RS 4
+Reload WMFS binary
+.RE
+.PP
+\fBControl + Return\fR
+.RS 4
+Run a terminal (urxvt by default)
+.RE
+.PP
+\fBAlt + q\fR
+.RS 4
+Quit the selected client
+.RE
+.PP
+\fBControl\-Alt\-Shift + q\fR
+.RS 4
+Exit WMFS
+.RE
+.PP
+\fBAlt + m \fR
+.RS 4
+Toggle maximize the selected client
+.RE
+.PP
+\fBAlt + b \fR
+.RS 4
+Toggle the bar position between top, hide and bottom
+.RE
+.PP
+\fBAlt + Tab\fR
+.RS 4
+Give the focus to the next client
+.RE
+.PP
+\fBAlt\-Shift + Tab\fR
+.RS 4
+Give the focus to the previous client
+.RE
+.PP
+\fBControl + Right\fR
+.RS 4
+Next tag
+.RE
+.PP
+\fBControl + Left\fR
+.RS 4
+Previous tag
+.RE
+.PP
+\fBAlt + Space\fR
+.RS 4
+Next layout
+.RE
+.PP
+\fBAlt\-Shift + Space\fR
+.RS 4
+Previous layout
+.RE
+.PP
+\fBAlt + l\fR
+.RS 4
+Increase the mwfact (+0\&.025)
+.RE
+.PP
+\fBAlt + h\fR
+.RS 4
+Decrease the mwfact (\-0\&.025)
+.RE
+.PP
+\fBAlt + d\fR
+.RS 4
+Increase the nmaster (+1)\fR
+.RE
+.PP
+\fBAlt\-Shift + d\fR
+.RS 4
+Decrease the nmaster (\-1)\fR
+.RE
+.PP
+\fBAlt + t\fR
+.RS 4
+Swap the current client with the next\fR
+.RE
+.PP
+\fBAlt\-Shift + t\fR
+.RS 4
+Swap the current client with the previous\fR
+.RE
+.PP
+\fBAlt + p\fR
+.RS 4
+Make a launcher in the infobar to run an unix command\fR
+.RE
+.PP
+\fBAlt + Escape\fR
+.RS 4
+Set WMFS in ViWMFS mode. (see wmfs \-V)\fR
+.RE
+.PP
+\fBAlt\-Shift + p\fR
+.RS 4
+Make a launcher in the infobar to run an ssh session\fR
+.RE
+.PP
+\fBAlt + F[1\&.\&.9]\fR
+.RS 4
+Change tag view
+.RE
+.PP
+\fBControl\-Shift +F[1\&.\&.9]\fR
+.RS 4
+Transfert the selected client to the wanted tag
+.RE
+.SH "CONFIGURATION"
+WMFS is configured by \fI$HOME/\&.config/wmfs/wmfsrc\fR\&.
+.sp
+.SH "BUGS"
+WMFS isn\'t stable for now\&. So it certainly contains some bugs\&.
+.sp
+.SH "AUTHORS"
+Martin Duquesnoy <\fIxorg62@gmail\&.com\fR\&[1]>\&.
+.sp
+.SH "WWW"
+Main site: \fIhttp://wmfs\&.info\fR Bug tracker: \fIhttp://bugs\&.wmfs\&.info\fR
+.sp
+.SH "COPYING"
+WMFS is under the BSD license\&. See COPYING for more information\&.
+.sp
+.SH "NOTES"
+.IP " 1." 4
+xorg62@gmail.com
+.RS 4
+\%mailto:xorg62@gmail.com
+.RE
